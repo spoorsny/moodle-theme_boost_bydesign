@@ -19,7 +19,8 @@
  * Metadata of the plugin used during installation and upgrades.
  *
  * @package    theme_boost_paintbynumbers
- * @copyright  2024 Geoffrey Bernardo van Wyk <geoffrey@vanwyk.biz>
+ * @author     Geoffrey Bernardo van Wyk {@link https://geoffreyvanwyk.dev}
+ * @copyright  2024 Spoorsny Tech {@link https://www.spoorsny.tech}
  * @license    {@link https://www.gnu.org/copyleft/gpl.html} GNU GPL v3 or later
  */
 
