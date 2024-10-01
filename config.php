@@ -32,3 +32,6 @@ $THEME->name            = 'boost_paintbynumbers';
 $THEME->parents         = ['boost'];
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->scss            = 'main';
+$THEME->yuicssmodules   = [];
+
+$THEME->activityheaderconfig = ['notitle' => true];
