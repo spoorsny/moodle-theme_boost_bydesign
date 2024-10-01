@@ -1,0 +1,5 @@
+.navbar.fixed-top {
+  background-color: $md-surface-container;
+  border-bottom: 1px solid $md-outline-variant;
+  box-shadow: $md-shadow; // Shadow size equivalent to Bootstrap's shadow-sm.
+}

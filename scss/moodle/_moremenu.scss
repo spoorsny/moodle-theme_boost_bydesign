@@ -1,0 +1,25 @@
+.moremenu {
+  .nav-link {
+    color: $md-on-surface;
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      background-color: $md-secondary-container;
+    }
+
+    &.active {
+      color: $md-on-surface;
+
+      &:hover,
+      &:focus {
+        color: $md-on-surface;
+        background-color: $md-secondary-container;
+      }
+    }
+  }
+
+  .nav-tabs {
+    background-color: $md-surface-container;
+  }
+}

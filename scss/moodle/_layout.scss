@@ -1,0 +1,17 @@
+#page.drawers {
+  .main-inner {
+    background-color: $md-surface-container-low;
+    box-shadow: $box-shadow-sm;
+    border: 1px solid $md-outline-variant;
+  }
+}
+
+.drawer-toggles {
+  .drawer-toggler {
+    .btn {
+      background-color: $md-surface-container-low;
+      box-shadow: $box-shadow-sm;
+      border: 1px solid $md-outline-variant;
+    }
+  }
+}

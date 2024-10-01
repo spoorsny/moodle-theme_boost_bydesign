@@ -1,0 +1,207 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white:                                 #fff !default;
+$gray-100:                              $md-neutral-90 !default;
+$gray-200:                              $md-neutral-80 !default;
+$gray-300:                              $md-neutral-70 !default;
+$gray-400:                              $md-neutral-60 !default;
+$gray-500:                              $md-neutral-50 !default;
+$gray-600:                              $md-neutral-40 !default;
+$gray-700:                              $md-neutral-30 !default;
+$gray-800:                              $md-neutral-20 !default;
+$gray-900:                              $md-neutral-10 !default;
+$black:                                 #000 !default;
+
+$blue:                                  #0f6cbf !default;
+$indigo:                                #6610f2 !default;
+$purple:                                #613d7c !default;
+$pink:                                  #e83e8c !default;
+$red:                                   #ca3120 !default;
+$orange:                                #f0ad4e !default;
+$yellow:                                #ff7518 !default;
+$green:                                 #357a32 !default;
+$teal:                                  #20c997 !default;
+$cyan:                                  #008196 !default;
+
+$primary:                               $md-primary !default;
+$secondary:                             $md-secondary !default;
+$success:                               $md-inverse-primary !default;
+$info:                                  $md-tertiary !default;
+$warning:                               $md-error-50 !default;
+$danger:                                $md-error !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    primary:    $primary,
+    secondary:  $secondary,
+    success:    $success,
+    info:       $info,
+    warning:    $warning,
+    danger:     $danger,
+  ),
+  $theme-colors
+);
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-responsive-font-sizes:          true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 2),
+    6: ($spacer * 3)
+) !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                               $md-surface !default;
+$body-color:                            $md-on-surface !default;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-color:                          $md-outline-variant !default;
+
+$border-radius:                         .5rem !default;
+$border-radius-lg:                      .6rem !default;
+
+$box-shadow-sm:               0 .125rem .25rem rgba($md-shadow, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($md-shadow, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($md-shadow, .175) !default;
+
+$component-active-color:                $md-on-primary !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:                        0.9375rem !default;
+$headings-font-weight:                  700 !default;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-accent-bg:                       rgba($black, .03) !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-color:                 rgba($primary, .75) !default;
+
+
+// Forms
+// Material Design: Mixture of Filled and Outlined Text Fields
+
+$input-bg:                              $md-surface-container-highest !default;
+$input-disabled-bg:                     rgba($md-on-surface, 0.04) !default;
+
+$input-color:                           $md-on-surface !default;
+$input-border-color:                    $md-outline !default;
+$input-box-shadow:                      inset 0 1px 1px rgba($md-shadow, .075) !default;
+
+$input-focus-bg:                        $md-surface-container-highest !default;
+$input-focus-border-color:              $md-primary !default;
+$input-focus-color:                     $md-on-surface !default;
+
+$input-placeholder-color:               $md-on-surface-variant !default;
+$input-plaintext-color:                 $md-on-surface !default;
+
+$input-group-addon-bg:                  $md-on-surface-variant !default;
+
+$custom-control-indicator-size: 1.25rem;
+
+
+// Navbar
+
+$navbar-dark-hover-color:               rgba($white, 1) !default;
+
+$navbar-light-color:                    $md-on-surface !default;
+$navbar-light-hover-color:              rgba($md-on-surface, .9) !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-divider-bg:                   $md-outline-variant !default;
+
+$dropdown-link-active-color:            $md-on-surface;
+$dropdown-link-active-bg:               $md-secondary-container;
+
+$dropdown-link-hover-color:             $md-on-surface;
+$dropdown-link-hover-bg:                $md-secondary-container;
+
+
+// Cards
+// Material Design: Outlined Cards
+
+$card-border-color:                     $md-outline-variant !default;
+$card-cap-bg:                           rgba($md-surface, .03) !default;
+$card-cap-color:                        $md-on-surface !default;
+$card-color:                            $md-on-surface !default;
+$card-bg:                               $md-surface !default;
+
+$card-group-margin:                     .25rem;
+
+
+// Popovers
+
+$popover-max-width:                     300px !default;
+
+
+// Toasts
+
+$toast-color:                           $white !default;
+$toast-background-color:                rgba($gray-900, .95) !default;
+$toast-header-color:                    $gray-100 !default;
+$toast-header-background-color:         rgba($white, .1) !default;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-border-width:                    0 !default;
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:                  .5rem !default;
+$breadcrumb-padding-x:                  0 !default;
+$breadcrumb-item-padding:               .5rem !default;
+$breadcrumb-margin-bottom:              0 !default;
+$breadcrumb-bg:                         transparent !default;
+$breadcrumb-divider:                    "/" !default;
+$breadcrumb-divider-rtl:                "/" !default;
+

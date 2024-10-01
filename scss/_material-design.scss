@@ -1,0 +1,290 @@
+/*************************** Material Design Colors *************************/
+
+//--- Roles
+
+//------ Light Theme
+
+$md-light-primary: #415f91;
+$md-light-surface-tint: #415f91;
+$md-light-on-primary: #ffffff;
+$md-light-primary-container: #d6e3ff;
+$md-light-on-primary-container: #001b3e;
+$md-light-secondary: #565f71;
+$md-light-on-secondary: #ffffff;
+$md-light-secondary-container: #dae2f9;
+$md-light-on-secondary-container: #131c2b;
+$md-light-tertiary: #705575;
+$md-light-on-tertiary: #ffffff;
+$md-light-tertiary-container: #fad8fd;
+$md-light-on-tertiary-container: #28132e;
+$md-light-error: #ba1a1a;
+$md-light-on-error: #ffffff;
+$md-light-error-container: #ffdad6;
+$md-light-on-error-container: #410002;
+$md-light-background: #f9f9ff;
+$md-light-on-background: #191c20;
+$md-light-surface: #f9f9ff;
+$md-light-on-surface: #191c20;
+$md-light-surface-variant: #e0e2ec;
+$md-light-on-surface-variant: #44474e;
+$md-light-outline: #74777f;
+$md-light-outline-variant: #c4c6d0;
+$md-light-shadow: #000000;
+$md-light-scrim: #000000;
+$md-light-inverse-surface: #2e3036;
+$md-light-inverse-on-surface: #f0f0f7;
+$md-light-inverse-primary: #aac7ff;
+$md-light-primary-fixed: #d6e3ff;
+$md-light-on-primary-fixed: #001b3e;
+$md-light-primary-fixed-dim: #aac7ff;
+$md-light-on-primary-fixed-variant: #284777;
+$md-light-secondary-fixed: #dae2f9;
+$md-light-on-secondary-fixed: #131c2b;
+$md-light-secondary-fixed-dim: #bec6dc;
+$md-light-on-secondary-fixed-variant: #3e4759;
+$md-light-tertiary-fixed: #fad8fd;
+$md-light-on-tertiary-fixed: #28132e;
+$md-light-tertiary-fixed-dim: #ddbce0;
+$md-light-on-tertiary-fixed-variant: #573e5c;
+$md-light-surface-dim: #d9d9e0;
+$md-light-surface-bright: #f9f9ff;
+$md-light-surface-container-lowest: #ffffff;
+$md-light-surface-container-low: #f3f3fa;
+$md-light-surface-container: #ededf4;
+$md-light-surface-container-high: #e7e8ee;
+$md-light-surface-container-highest: #e2e2e9;
+
+
+//------ Dark Theme
+
+$md-dark-primary: #aac7ff;
+$md-dark-surface-tint: #aac7ff;
+$md-dark-on-primary: #0a305f;
+$md-dark-primary-container: #284777;
+$md-dark-on-primary-container: #d6e3ff;
+$md-dark-secondary: #bec6dc;
+$md-dark-on-secondary: #283141;
+$md-dark-secondary-container: #3e4759;
+$md-dark-on-secondary-container: #dae2f9;
+$md-dark-tertiary: #ddbce0;
+$md-dark-on-tertiary: #3f2844;
+$md-dark-tertiary-container: #573e5c;
+$md-dark-on-tertiary-container: #fad8fd;
+$md-dark-error: #ffb4ab;
+$md-dark-on-error: #690005;
+$md-dark-error-container: #93000a;
+$md-dark-on-error-container: #ffdad6;
+$md-dark-background: #111318;
+$md-dark-on-background: #e2e2e9;
+$md-dark-surface: #111318;
+$md-dark-on-surface: #e2e2e9;
+$md-dark-surface-variant: #44474e;
+$md-dark-on-surface-variant: #c4c6d0;
+$md-dark-outline: #8e9099;
+$md-dark-outline-variant: #44474e;
+$md-dark-shadow: #000000;
+$md-dark-scrim: #000000;
+$md-dark-inverse-surface: #e2e2e9;
+$md-dark-inverse-on-surface: #2e3036;
+$md-dark-inverse-primary: #415f91;
+$md-dark-primary-fixed: #d6e3ff;
+$md-dark-on-primary-fixed: #001b3e;
+$md-dark-primary-fixed-dim: #aac7ff;
+$md-dark-on-primary-fixed-variant: #284777;
+$md-dark-secondary-fixed: #dae2f9;
+$md-dark-on-secondary-fixed: #131c2b;
+$md-dark-secondary-fixed-dim: #bec6dc;
+$md-dark-on-secondary-fixed-variant: #3e4759;
+$md-dark-tertiary-fixed: #fad8fd;
+$md-dark-on-tertiary-fixed: #28132e;
+$md-dark-tertiary-fixed-dim: #ddbce0;
+$md-dark-on-tertiary-fixed-variant: #573e5c;
+$md-dark-surface-dim: #111318;
+$md-dark-surface-bright: #37393e;
+$md-dark-surface-container-lowest: #0c0e13;
+$md-dark-surface-container-low: #191c20;
+$md-dark-surface-container: #1d2024;
+$md-dark-surface-container-high: #282a2f;
+$md-dark-surface-container-highest: #33353a;
+
+
+//------ Default Theme
+
+$md-primary: $md-light-primary;
+$md-surface-tint: $md-light-surface-tint;
+$md-on-primary: $md-light-on-primary;
+$md-primary-container: $md-light-primary-container;
+$md-on-primary-container: $md-light-on-primary-container;
+$md-secondary: $md-light-secondary;
+$md-on-secondary: $md-light-on-secondary;
+$md-secondary-container: $md-light-secondary-container;
+$md-on-secondary-container: $md-light-on-secondary-container;
+$md-tertiary: $md-light-tertiary;
+$md-on-tertiary: $md-light-on-tertiary;
+$md-tertiary-container: $md-light-tertiary-container;
+$md-on-tertiary-container: $md-light-on-tertiary-container;
+$md-error: $md-light-error;
+$md-on-error: $md-light-on-error;
+$md-error-container: $md-light-error-container;
+$md-on-error-container: $md-light-on-error-container;
+$md-background: $md-light-background;
+$md-on-background: $md-light-on-background;
+$md-surface: $md-light-surface;
+$md-on-surface: $md-light-on-surface;
+$md-surface-variant: $md-light-surface-variant;
+$md-on-surface-variant: $md-light-on-surface-variant;
+$md-outline: $md-light-outline;
+$md-outline-variant: $md-light-outline-variant;
+$md-shadow: $md-light-shadow;
+$md-scrim: $md-light-scrim;
+$md-inverse-surface: $md-light-inverse-surface;
+$md-inverse-on-surface: $md-light-inverse-on-surface;
+$md-inverse-primary: $md-light-inverse-primary;
+$md-primary-fixed: $md-light-primary-fixed;
+$md-on-primary-fixed: $md-light-on-primary-fixed;
+$md-primary-fixed-dim: $md-light-primary-fixed-dim;
+$md-on-primary-fixed-variant: $md-light-on-primary-fixed-variant;
+$md-secondary-fixed: $md-light-secondary-fixed;
+$md-on-secondary-fixed: $md-light-on-secondary-fixed;
+$md-secondary-fixed-dim: $md-light-secondary-fixed-dim;
+$md-on-secondary-fixed-variant: $md-light-on-secondary-fixed-variant;
+$md-tertiary-fixed: $md-light-tertiary-fixed;
+$md-on-tertiary-fixed: $md-light-on-tertiary-fixed;
+$md-tertiary-fixed-dim: $md-light-tertiary-fixed-dim;
+$md-on-tertiary-fixed-variant: $md-light-on-tertiary-fixed-variant;
+$md-surface-dim: $md-light-surface-dim;
+$md-surface-bright: $md-light-surface-bright;
+$md-surface-container-lowest: $md-light-surface-container-lowest;
+$md-surface-container-low: $md-light-surface-container-low;
+$md-surface-container: $md-light-surface-container;
+$md-surface-container-high: $md-light-surface-container-high;
+$md-surface-container-highest: $md-light-surface-container-highest;
+
+//--- Palettes
+
+//------ Primary
+
+$md-primary-0: #000000;
+$md-primary-5: #00102B;
+$md-primary-10: #001B3E;
+$md-primary-15: #002551;
+$md-primary-20: #002F64;
+$md-primary-25: #033A77;
+$md-primary-30: #194683;
+$md-primary-35: #285290;
+$md-primary-40: #365E9D;
+$md-primary-50: #5177B8;
+$md-primary-60: #6B91D3;
+$md-primary-70: #86ACF0;
+$md-primary-80: #AAC7FF;
+$md-primary-90: #D6E3FF;
+$md-primary-95: #ECF0FF;
+$md-primary-98: #F9F9FF;
+$md-primary-99: #FDFBFF;
+$md-primary-100: #FFFFFF;
+
+
+//------ Secondary
+
+$md-secondary-0: #000000;
+$md-secondary-5: #09111E;
+$md-secondary-10: #141C29;
+$md-secondary-15: #1E2634;
+$md-secondary-20: #29313F;
+$md-secondary-25: #343C4A;
+$md-secondary-30: #3F4756;
+$md-secondary-35: #4B5362;
+$md-secondary-40: #575E6F;
+$md-secondary-50: #707788;
+$md-secondary-60: #8991A2;
+$md-secondary-70: #A4ABBD;
+$md-secondary-80: #BFC6D9;
+$md-secondary-90: #DBE2F6;
+$md-secondary-95: #ECF0FF;
+$md-secondary-98: #F9F9FF;
+$md-secondary-99: #FDFBFF;
+$md-secondary-100: #FFFFFF;
+
+
+//------ Tertiary
+
+
+$md-tertiary-0: #000000;
+$md-tertiary-5: #1B0A21;
+$md-tertiary-10: #27142C;
+$md-tertiary-15: #321F37;
+$md-tertiary-20: #3D2942;
+$md-tertiary-25: #49344D;
+$md-tertiary-30: #553F59;
+$md-tertiary-35: #614B65;
+$md-tertiary-40: #6E5772;
+$md-tertiary-50: #886F8B;
+$md-tertiary-60: #A288A6;
+$md-tertiary-70: #BEA2C1;
+$md-tertiary-80: #DABDDD;
+$md-tertiary-90: #F7D9FA;
+$md-tertiary-95: #FFEBFE;
+$md-tertiary-98: #FFF7FB;
+$md-tertiary-99: #FFFBFF;
+$md-tertiary-100: #FFFFFF;
+
+
+//------ Neutral
+
+$md-neutral-0: #000000;
+$md-neutral-5: #101113;
+$md-neutral-10: #1B1B1E;
+$md-neutral-15: #252628;
+$md-neutral-20: #303033;
+$md-neutral-25: #3B3B3E;
+$md-neutral-30: #464649;
+$md-neutral-35: #525255;
+$md-neutral-40: #5E5E61;
+$md-neutral-50: #77777A;
+$md-neutral-60: #919093;
+$md-neutral-70: #ACABAE;
+$md-neutral-80: #C7C6C9;
+$md-neutral-90: #E3E2E5;
+$md-neutral-95: #F2F0F3;
+$md-neutral-98: #FAF9FC;
+$md-neutral-99: #FDFBFF;
+$md-neutral-100: #FFFFFF;
+
+//------ Neutral Variant
+
+$md-neutral-variant-0: #000000;
+$md-neutral-variant-5: #0E1117;
+$md-neutral-variant-10: #191C22;
+$md-neutral-variant-15: #23262C;
+$md-neutral-variant-20: #2E3037;
+$md-neutral-variant-25: #393B42;
+$md-neutral-variant-30: #44474D;
+$md-neutral-variant-35: #505259;
+$md-neutral-variant-40: #5C5E65;
+$md-neutral-variant-50: #75777E;
+$md-neutral-variant-60: #8E9098;
+$md-neutral-variant-70: #A9ABB3;
+$md-neutral-variant-80: #C5C6CE;
+$md-neutral-variant-90: #E1E2EA;
+$md-neutral-variant-95: #EFF0F9;
+$md-neutral-variant-98: #F9F9FF;
+$md-neutral-variant-99: #FDFBFF;
+$md-neutral-variant-100: #FFFFFF;
+
+//------ Error
+
+$md-error-0: #000000;
+$md-error-5: #2D0002;
+$md-error-10: #410004;
+$md-error-15: #540006;
+$md-error-20: #65090E;
+$md-error-25: #751617;
+$md-error-30: #852221;
+$md-error-35: #952E2B;
+$md-error-40: #A53A36;
+$md-error-50: #C5524C;
+$md-error-60: #E66A63;
+$md-error-70: #FF8981;
+$md-error-80: #FFB3AD;
+$md-error-90: #FFDAD7;
+$md-error-100: #FFFFFF;
