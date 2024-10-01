@@ -18,7 +18,7 @@
 /**
  * Translations of strings introduced by the plugin.
  *
- * @package    theme_materialdesign
+ * @package    theme_boost_paintbynumbers
  * @copyright  2024 Geoffrey Bernardo van Wyk <geoffrey@vanwyk.biz>
  * @license    {@link https://www.gnu.org/copyleft/gpl.html} GNU GPL v3 or later
  *
@@ -30,13 +30,13 @@ defined('MOODLE_INTERNAL') || die();
 // --- Compulsory strings
 
 // Human-readable name of the plugin.
-$string['pluginname'] = 'Material Design';
+$string['pluginname'] = 'Paint By Numbers';
 
 // A description of the theme displayed in the theme selector.
-$string['choosereadme'] = 'Theme based on the Material Design system by Google.';
+$string['choosereadme'] = 'Theme based on the colors of the Material Design system by Google.';
 
 // Settings text.
-$string['configtitle'] = 'Material Design';
+$string['configtitle'] = 'Paint By Numbers';
 
 // --- Other Strings
 

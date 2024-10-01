@@ -18,7 +18,7 @@
 /**
  * Options for configuring the theme.
  *
- * @package    theme_materialdesign
+ * @package    theme_boost_paintbynumbers
  * @copyright  2024 Geoffrey Bernardo van Wyk <geoffrey@vanwyk.biz>
  * @license    {@link https://www.gnu.org/copyleft/gpl.html} GNU GPL v3 or later
  *
@@ -27,7 +27,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$THEME->name            = 'materialdesign';
+$THEME->name            = 'boost_paintbynumbers';
 $THEME->parents         = ['boost'];
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->scss            = 'main';
