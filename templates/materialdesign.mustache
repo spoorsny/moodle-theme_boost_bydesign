@@ -1,0 +1,353 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_boost_paintbynumbers/material_design
+
+    Use to generate SCSS variables from the export of Material Design theme in
+    JSON format.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Context variables required for this template:
+    * none
+
+    Example context (json):
+    {
+        "schemes": {
+            "light": {
+                "primary": "#415F91",
+                "surfaceTint": "#415F91",
+                "onPrimary": "#FFFFFF",
+                "primaryContainer": "#D6E3FF",
+                "onPrimaryContainer": "#001B3E",
+                "secondary": "#565F71",
+                "onSecondary": "#FFFFFF",
+                "secondaryContainer": "#DAE2F9",
+                "onSecondaryContainer": "#131C2B",
+                "tertiary": "#705575",
+                "onTertiary": "#FFFFFF",
+                "tertiaryContainer": "#FAD8FD",
+                "onTertiaryContainer": "#28132E",
+                "error": "#BA1A1A",
+                "onError": "#FFFFFF",
+                "errorContainer": "#FFDAD6",
+                "onErrorContainer": "#410002",
+                "background": "#F9F9FF",
+                "onBackground": "#191C20",
+                "surface": "#F9F9FF",
+                "onSurface": "#191C20",
+                "surfaceVariant": "#E0E2EC",
+                "onSurfaceVariant": "#44474E",
+                "outline": "#74777F",
+                "outlineVariant": "#C4C6D0",
+                "shadow": "#000000",
+                "scrim": "#000000",
+                "inverseSurface": "#2E3036",
+                "inverseOnSurface": "#F0F0F7",
+                "inversePrimary": "#AAC7FF",
+                "primaryFixed": "#D6E3FF",
+                "onPrimaryFixed": "#001B3E",
+                "primaryFixedDim": "#AAC7FF",
+                "onPrimaryFixedVariant": "#284777",
+                "secondaryFixed": "#DAE2F9",
+                "onSecondaryFixed": "#131C2B",
+                "secondaryFixedDim": "#BEC6DC",
+                "onSecondaryFixedVariant": "#3E4759",
+                "tertiaryFixed": "#FAD8FD",
+                "onTertiaryFixed": "#28132E",
+                "tertiaryFixedDim": "#DDBCE0",
+                "onTertiaryFixedVariant": "#573E5C",
+                "surfaceDim": "#D9D9E0",
+                "surfaceBright": "#F9F9FF",
+                "surfaceContainerLowest": "#FFFFFF",
+                "surfaceContainerLow": "#F3F3FA",
+                "surfaceContainer": "#EDEDF4",
+                "surfaceContainerHigh": "#E7E8EE",
+                "surfaceContainerHighest": "#E2E2E9"
+            }
+        },
+        "palettes": {
+            "primary": {
+                "0": "#000000",
+                "5": "#00102B",
+                "10": "#001B3E",
+                "15": "#002551",
+                "20": "#002F64",
+                "25": "#033A77",
+                "30": "#194683",
+                "35": "#285290",
+                "40": "#365E9D",
+                "50": "#5177B8",
+                "60": "#6B91D3",
+                "70": "#86ACF0",
+                "80": "#AAC7FF",
+                "90": "#D6E3FF",
+                "95": "#ECF0FF",
+                "98": "#F9F9FF",
+                "99": "#FDFBFF",
+                "100": "#FFFFFF"
+            },
+            "secondary": {
+                "0": "#000000",
+                "5": "#09111E",
+                "10": "#141C29",
+                "15": "#1E2634",
+                "20": "#29313F",
+                "25": "#343C4A",
+                "30": "#3F4756",
+                "35": "#4B5362",
+                "40": "#575E6F",
+                "50": "#707788",
+                "60": "#8991A2",
+                "70": "#A4ABBD",
+                "80": "#BFC6D9",
+                "90": "#DBE2F6",
+                "95": "#ECF0FF",
+                "98": "#F9F9FF",
+                "99": "#FDFBFF",
+                "100": "#FFFFFF"
+            },
+            "tertiary": {
+                "0": "#000000",
+                "5": "#1B0A21",
+                "10": "#27142C",
+                "15": "#321F37",
+                "20": "#3D2942",
+                "25": "#49344D",
+                "30": "#553F59",
+                "35": "#614B65",
+                "40": "#6E5772",
+                "50": "#886F8B",
+                "60": "#A288A6",
+                "70": "#BEA2C1",
+                "80": "#DABDDD",
+                "90": "#F7D9FA",
+                "95": "#FFEBFE",
+                "98": "#FFF7FB",
+                "99": "#FFFBFF",
+                "100": "#FFFFFF"
+            },
+            "neutral": {
+                "0": "#000000",
+                "5": "#101113",
+                "10": "#1B1B1E",
+                "15": "#252628",
+                "20": "#303033",
+                "25": "#3B3B3E",
+                "30": "#464649",
+                "35": "#525255",
+                "40": "#5E5E61",
+                "50": "#77777A",
+                "60": "#919093",
+                "70": "#ACABAE",
+                "80": "#C7C6C9",
+                "90": "#E3E2E5",
+                "95": "#F2F0F3",
+                "98": "#FAF9FC",
+                "99": "#FDFBFF",
+                "100": "#FFFFFF"
+            },
+            "neutral-variant": {
+                "0": "#000000",
+                "5": "#0E1117",
+                "10": "#191C22",
+                "15": "#23262C",
+                "20": "#2E3037",
+                "25": "#393B42",
+                "30": "#44474D",
+                "35": "#505259",
+                "40": "#5C5E65",
+                "50": "#75777E",
+                "60": "#8E9098",
+                "70": "#A9ABB3",
+                "80": "#C5C6CE",
+                "90": "#E1E2EA",
+                "95": "#EFF0F9",
+                "98": "#F9F9FF",
+                "99": "#FDFBFF",
+                "100": "#FFFFFF"
+            }
+        }
+    }
+}}
+
+//------ Default Theme
+
+$md-primary:                      {{ schemes.light.primary }};
+$md-surface-tint:                 {{ schemes.light.surfaceTint }};
+$md-on-primary:                   {{ schemes.light.onPrimary }};
+$md-primary-container:            {{ schemes.light.primaryContainer }};
+$md-on-primary-container:         {{ schemes.light.onPrimaryContainer }};
+$md-secondary:                    {{ schemes.light.secondary }};
+$md-on-secondary:                 {{ schemes.light.onSecondary }};
+$md-secondary-container:          {{ schemes.light.secondaryContainer }};
+$md-on-secondary-container:       {{ schemes.light.onSecondaryContainer }};
+$md-tertiary:                     {{ schemes.light.tertiary }};
+$md-on-tertiary:                  {{ schemes.light.onTertiary }};
+$md-tertiary-container:           {{ schemes.light.tertiaryContainer }};
+$md-on-tertiary-container:        {{ schemes.light.onTertiaryContainer }};
+$md-error:                        {{ schemes.light.error }};
+$md-on-error:                     {{ schemes.light.onError }};
+$md-error-container:              {{ schemes.light.errorContainer }};
+$md-on-error-container:           {{ schemes.light.onErrorContainer }};
+$md-background:                   {{ schemes.light.background }};
+$md-on-background:                {{ schemes.light.onBackground }};
+$md-surface:                      {{ schemes.light.surface }};
+$md-on-surface:                   {{ schemes.light.onSurface }};
+$md-surface-variant:              {{ schemes.light.surfaceVariant }};
+$md-on-surface-variant:           {{ schemes.light.onSurfaceVariant }};
+$md-outline:                      {{ schemes.light.outline }};
+$md-outline-variant:              {{ schemes.light.outlineVariant }};
+$md-shadow:                       {{ schemes.light.shadow }};
+$md-scrim:                        {{ schemes.light.scrim }};
+$md-inverse-surface:              {{ schemes.light.inverseSurface }};
+$md-inverse-on-surface:           {{ schemes.light.inverseOnSurface }};
+$md-inverse-primary:              {{ schemes.light.inversePrimary }};
+$md-primary-fixed:                {{ schemes.light.primaryFixed }};
+$md-on-primary-fixed:             {{ schemes.light.onPrimaryFixed }};
+$md-primary-fixed-dim:            {{ schemes.light.primaryFixedDim }};
+$md-on-primary-fixed-variant:     {{ schemes.light.onPrimaryFixedVariant }};
+$md-secondary-fixed:              {{ schemes.light.secondaryFixed }};
+$md-on-secondary-fixed:           {{ schemes.light.onSecondaryFixed }};
+$md-secondary-fixed-dim:          {{ schemes.light.secondaryFixedDim }};
+$md-on-secondary-fixed-variant:   {{ schemes.light.onSecondaryFixedVariant }};
+$md-tertiary-fixed:               {{ schemes.light.tertiaryFixed }};
+$md-on-tertiary-fixed:            {{ schemes.light.onTertiaryFixed }};
+$md-tertiary-fixed-dim:           {{ schemes.light.tertiaryFixedDim }};
+$md-on-tertiary-fixed-variant:    {{ schemes.light.onTertiaryFixedVariant }};
+$md-surface-dim:                  {{ schemes.light.surfaceDim }};
+$md-surface-bright:               {{ schemes.light.surfaceBright }};
+$md-surface-container-lowest:     {{ schemes.light.surfaceContainerLowest }};
+$md-surface-container-low:        {{ schemes.light.surfaceContainerLow }};
+$md-surface-container:            {{ schemes.light.surfaceContainer }};
+$md-surface-container-high:       {{ schemes.light.surfaceContainerHigh }};
+$md-surface-container-highest:    {{ schemes.light.surfaceContainerHighest }};
+
+//--- Palettes
+
+//------ Primary
+
+$md-primary-0:     {{ palettes.primary.0 }};
+$md-primary-5:     {{ palettes.primary.5 }};
+$md-primary-10:    {{ palettes.primary.10 }};
+$md-primary-15:    {{ palettes.primary.15 }};
+$md-primary-20:    {{ palettes.primary.20 }};
+$md-primary-25:    {{ palettes.primary.25 }};
+$md-primary-30:    {{ palettes.primary.30 }};
+$md-primary-35:    {{ palettes.primary.35 }};
+$md-primary-40:    {{ palettes.primary.40 }};
+$md-primary-50:    {{ palettes.primary.50 }};
+$md-primary-60:    {{ palettes.primary.60 }};
+$md-primary-70:    {{ palettes.primary.70 }};
+$md-primary-80:    {{ palettes.primary.80 }};
+$md-primary-90:    {{ palettes.primary.90 }};
+$md-primary-95:    {{ palettes.primary.95 }};
+$md-primary-98:    {{ palettes.primary.98 }};
+$md-primary-99:    {{ palettes.primary.99 }};
+$md-primary-100:   {{ palettes.primary.100 }};
+
+
+//------ Secondary
+
+$md-secondary-0:     {{ palettes.secondary.0 }};
+$md-secondary-5:     {{ palettes.secondary.5 }};
+$md-secondary-10:    {{ palettes.secondary.10 }};
+$md-secondary-15:    {{ palettes.secondary.15 }};
+$md-secondary-20:    {{ palettes.secondary.20 }};
+$md-secondary-25:    {{ palettes.secondary.25 }};
+$md-secondary-30:    {{ palettes.secondary.30 }};
+$md-secondary-35:    {{ palettes.secondary.35 }};
+$md-secondary-40:    {{ palettes.secondary.40 }};
+$md-secondary-50:    {{ palettes.secondary.50 }};
+$md-secondary-60:    {{ palettes.secondary.60 }};
+$md-secondary-70:    {{ palettes.secondary.70 }};
+$md-secondary-80:    {{ palettes.secondary.80 }};
+$md-secondary-90:    {{ palettes.secondary.90 }};
+$md-secondary-95:    {{ palettes.secondary.95 }};
+$md-secondary-98:    {{ palettes.secondary.98 }};
+$md-secondary-99:    {{ palettes.secondary.99 }};
+$md-secondary-100:   {{ palettes.secondary.100 }};
+
+
+//------ Tertiary
+
+$md-tertiary-0:     {{ palettes.tertiary.0 }};
+$md-tertiary-5:     {{ palettes.tertiary.5 }};
+$md-tertiary-10:    {{ palettes.tertiary.10 }};
+$md-tertiary-15:    {{ palettes.tertiary.15 }};
+$md-tertiary-20:    {{ palettes.tertiary.20 }};
+$md-tertiary-25:    {{ palettes.tertiary.25 }};
+$md-tertiary-30:    {{ palettes.tertiary.30 }};
+$md-tertiary-35:    {{ palettes.tertiary.35 }};
+$md-tertiary-40:    {{ palettes.tertiary.40 }};
+$md-tertiary-50:    {{ palettes.tertiary.50 }};
+$md-tertiary-60:    {{ palettes.tertiary.60 }};
+$md-tertiary-70:    {{ palettes.tertiary.70 }};
+$md-tertiary-80:    {{ palettes.tertiary.80 }};
+$md-tertiary-90:    {{ palettes.tertiary.90 }};
+$md-tertiary-95:    {{ palettes.tertiary.95 }};
+$md-tertiary-98:    {{ palettes.tertiary.98 }};
+$md-tertiary-99:    {{ palettes.tertiary.99 }};
+$md-tertiary-100:   {{ palettes.tertiary.100 }};
+
+
+//------ Neutral
+
+$md-neutral-0:     {{ palettes.neutral.0 }};
+$md-neutral-5:     {{ palettes.neutral.5 }};
+$md-neutral-10:    {{ palettes.neutral.10 }};
+$md-neutral-15:    {{ palettes.neutral.15 }};
+$md-neutral-20:    {{ palettes.neutral.20 }};
+$md-neutral-25:    {{ palettes.neutral.25 }};
+$md-neutral-30:    {{ palettes.neutral.30 }};
+$md-neutral-35:    {{ palettes.neutral.35 }};
+$md-neutral-40:    {{ palettes.neutral.40 }};
+$md-neutral-50:    {{ palettes.neutral.50 }};
+$md-neutral-60:    {{ palettes.neutral.60 }};
+$md-neutral-70:    {{ palettes.neutral.70 }};
+$md-neutral-80:    {{ palettes.neutral.80 }};
+$md-neutral-90:    {{ palettes.neutral.90 }};
+$md-neutral-95:    {{ palettes.neutral.95 }};
+$md-neutral-98:    {{ palettes.neutral.98 }};
+$md-neutral-99:    {{ palettes.neutral.99 }};
+$md-neutral-100:   {{ palettes.neutral.100 }};
+
+
+//------ Neutral Variant
+
+$md-neutral-variant-0:     {{ palettes.neutral-variant.0 }};
+$md-neutral-variant-5:     {{ palettes.neutral-variant.5 }};
+$md-neutral-variant-10:    {{ palettes.neutral-variant.10 }};
+$md-neutral-variant-15:    {{ palettes.neutral-variant.15 }};
+$md-neutral-variant-20:    {{ palettes.neutral-variant.20 }};
+$md-neutral-variant-25:    {{ palettes.neutral-variant.25 }};
+$md-neutral-variant-30:    {{ palettes.neutral-variant.30 }};
+$md-neutral-variant-35:    {{ palettes.neutral-variant.35 }};
+$md-neutral-variant-40:    {{ palettes.neutral-variant.40 }};
+$md-neutral-variant-50:    {{ palettes.neutral-variant.50 }};
+$md-neutral-variant-60:    {{ palettes.neutral-variant.60 }};
+$md-neutral-variant-70:    {{ palettes.neutral-variant.70 }};
+$md-neutral-variant-80:    {{ palettes.neutral-variant.80 }};
+$md-neutral-variant-90:    {{ palettes.neutral-variant.90 }};
+$md-neutral-variant-95:    {{ palettes.neutral-variant.95 }};
+$md-neutral-variant-98:    {{ palettes.neutral-variant.98 }};
+$md-neutral-variant-99:    {{ palettes.neutral-variant.99 }};
+$md-neutral-variant-100:   {{ palettes.neutral-variant.100 }};

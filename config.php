@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -18,20 +17,19 @@
 /**
  * Options for configuring the theme.
  *
- * @package    theme_boost_paintbynumbers
  * @author     Geoffrey Bernardo van Wyk {@link https://geoffreyvanwyk.dev}
  * @copyright  2024 Spoorsny Tech {@link https://www.spoorsny.tech}
- * @license    {@link https://www.gnu.org/copyleft/gpl.html} GNU GPL v3 or later
+ * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *
  * @var theme_config $THEME
  */
+defined('MOODLE_INTERNAL') || exit;
 
-defined('MOODLE_INTERNAL') || die();
-
-$THEME->name            = 'boost_paintbynumbers';
-$THEME->parents         = ['boost'];
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->scss            = 'main';
-$THEME->yuicssmodules   = [];
-
-$THEME->activityheaderconfig = ['notitle' => true];
+$THEME->name                  = 'boost_paintbynumbers';
+$THEME->parents               = ['boost'];
+$THEME->rendererfactory       = 'theme_overridden_renderer_factory';
+$THEME->scss                  = function ($theme) {
+    return theme_boost_paintbynumbers_scss($theme);
+};
+$THEME->yuicssmodules         = [];
+$THEME->activityheaderconfig  = ['notitle' => true];

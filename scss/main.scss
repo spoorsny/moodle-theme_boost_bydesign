@@ -1,6 +1,6 @@
 /*************************** Variables **************************************/
 
-@import "material-design";
+@import "material-design-error-palette";
 
 @import "bootstrap/variables";
 @import "bootstrap/vendor/rfs-variables";
@@ -55,9 +55,8 @@ body {
 // the secondary outline button because gray-200 is much too light
 // for an outline button.
 .btn-outline-secondary {
-  @include button-outline-variant($secondary
-);
-border-color: $secondary;
+  @include button-outline-variant($secondary);
+  border-color: $secondary;
 }
 
 .btn-outline-info {

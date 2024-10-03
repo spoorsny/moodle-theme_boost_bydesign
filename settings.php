@@ -15,36 +15,36 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Translations of strings introduced by the plugin.
+ * Settings that can be configured by the site administrator.
  *
  * @author     Geoffrey Bernardo van Wyk {@link https://geoffreyvanwyk.dev}
  * @copyright  2024 Spoorsny Tech {@link https://www.spoorsny.tech}
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *
- * @var array $string
+ * @var admin_root $ADMIN
  */
 defined('MOODLE_INTERNAL') || exit;
 
-/* --- Compulsory strings */
+if ($ADMIN->fulltree) {
+    $settings = new theme_boost_admin_settingspage_tabs(
+        'themesettingboost_paintbynumbers',
+        get_string('configtitle', 'theme_boost_paintbynumbers')
+    );
 
-// Human-readable name of the plugin.
-$string['pluginname'] = 'Paint By Numbers';
+    $page = new admin_settingpage(
+        'theme_boost_paintbynumbers_general',
+        get_string('generalsettings', 'theme_boost_paintbynumbers'),
+    );
 
-// A description of the theme displayed in the theme selector.
-$string['choosereadme'] = 'Theme based on the colors of the Material Design system by Google.';
+    $page->add(
+        new admin_setting_configtextarea(
+            'theme_boost_paintbynumbers/materialdesign',
+            get_string('setting:materialdesign:label', 'theme_boost_paintbynumbers'),
+            get_string('setting:materialdesign:description', 'theme_boost_paintbynumbers'),
+            '',
+            PARAM_TEXT,
+        )
+    );
 
-// Settings text.
-$string['configtitle'] = 'Paint By Numbers';
-
-/* --- Settings */
-
-$string['generalsettings'] = 'General';
-
-$string['setting:materialdesign:label']       = 'Material Design Theme';
-$string['setting:materialdesign:description'] = 'Paste into this textarea '
-    . 'the export in JSON format from the '
-    . '<a href="https://material-foundation.github.io/material-theme-builder">Material Design theme builder<a/> .';
-
-/* --- Other Strings */
-
-// ...
+    $settings->add($page);
+}
