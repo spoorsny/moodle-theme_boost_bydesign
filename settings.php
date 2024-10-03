@@ -27,20 +27,20 @@ defined('MOODLE_INTERNAL') || exit;
 
 if ($ADMIN->fulltree) {
     $settings = new theme_boost_admin_settingspage_tabs(
-        'themesettingboost_paintbynumbers',
-        get_string('configtitle', 'theme_boost_paintbynumbers')
+        'themesettingboost_bydesign',
+        get_string('configtitle', 'theme_boost_bydesign')
     );
 
     $page = new admin_settingpage(
-        'theme_boost_paintbynumbers_general',
-        get_string('generalsettings', 'theme_boost_paintbynumbers'),
+        'theme_boost_bydesign_general',
+        get_string('generalsettings', 'theme_boost_bydesign'),
     );
 
     $page->add(
         new admin_setting_configtextarea(
-            'theme_boost_paintbynumbers/materialdesign',
-            get_string('setting:materialdesign:label', 'theme_boost_paintbynumbers'),
-            get_string('setting:materialdesign:description', 'theme_boost_paintbynumbers'),
+            'theme_boost_bydesign/materialdesign',
+            get_string('setting:materialdesign:label', 'theme_boost_bydesign'),
+            get_string('setting:materialdesign:description', 'theme_boost_bydesign'),
             '',
             PARAM_TEXT,
         )

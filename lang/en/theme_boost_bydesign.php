@@ -28,13 +28,13 @@ defined('MOODLE_INTERNAL') || exit;
 /* --- Compulsory strings */
 
 // Human-readable name of the plugin.
-$string['pluginname'] = 'Paint By Numbers';
+$string['pluginname'] = 'By Design';
 
 // A description of the theme displayed in the theme selector.
 $string['choosereadme'] = 'Theme based on the colors of the Material Design system by Google.';
 
 // Settings text.
-$string['configtitle'] = 'Paint By Numbers';
+$string['configtitle'] = 'By Design';
 
 /* --- Settings */
 

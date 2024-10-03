@@ -31,23 +31,23 @@
  *
  * @return string
  */
-function theme_boost_paintbynumbers_scss($theme): string {
+function theme_boost_bydesign_scss($theme): string {
     global $CFG, $PAGE;
 
     $json = trim($theme->settings->materialdesign);
 
     if (empty($json)) {
-        $materialdesign = file_get_contents($CFG->dirroot . '/theme/boost_paintbynumbers/scss/_material-design-default.scss');
+        $materialdesign = file_get_contents($CFG->dirroot . '/theme/boost_bydesign/scss/_material-design-default.scss');
     } else {
         $data           = json_decode($json);
         $renderer       = new plugin_renderer_base($PAGE, RENDERER_TARGET_CLI);
-        $materialdesign = $renderer->render_from_template('theme_boost_paintbynumbers/materialdesign', $data);
+        $materialdesign = $renderer->render_from_template('theme_boost_bydesign/materialdesign', $data);
 
         // Comment-out HTML comments in debug mode.
         $materialdesign = str_replace(['<', "'<"], '//', $materialdesign);
     }
 
-    $main = file_get_contents($CFG->dirroot . '/theme/boost_paintbynumbers/scss/main.scss');
+    $main = file_get_contents($CFG->dirroot . '/theme/boost_bydesign/scss/main.scss');
 
     $scss = $materialdesign . $main;
 

@@ -18,7 +18,7 @@
 /**
  * Metadata of the plugin used during installation and upgrades.
  *
- * @package    theme_boost_paintbynumbers
+ * @package    theme_boost_bydesign
  * @author     Geoffrey Bernardo van Wyk {@link https://geoffreyvanwyk.dev}
  * @copyright  2024 Spoorsny Tech {@link https://www.spoorsny.tech}
  * @license    {@link https://www.gnu.org/copyleft/gpl.html} GNU GPL v3 or later
@@ -30,17 +30,17 @@ use core\plugininfo\theme;
 
 defined('MOODLE_INTERNAL') || die();
 
-if (! class_exists('theme_boost_paintbynumbers')) {
+if (! class_exists('theme_boost_bydesign')) {
     /**
      * @property string component the component name, type_name
      */
-    class theme_boost_paintbynumbers extends theme
+    class theme_boost_bydesign extends theme
     {
     }
 }
 
-/** @var theme_boost_paintbynumbers $plugin */
-$plugin->component = 'theme_boost_paintbynumbers';
+/** @var theme_boost_bydesign $plugin */
+$plugin->component = 'theme_boost_bydesign';
 $plugin->version   = 2024092700;
 $plugin->requires  = 2024042200; // Moodle 4.4
 

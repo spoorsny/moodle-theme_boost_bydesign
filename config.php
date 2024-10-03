@@ -25,11 +25,11 @@
  */
 defined('MOODLE_INTERNAL') || exit;
 
-$THEME->name                  = 'boost_paintbynumbers';
+$THEME->name                  = 'boost_bydesign';
 $THEME->parents               = ['boost'];
 $THEME->rendererfactory       = 'theme_overridden_renderer_factory';
 $THEME->scss                  = function ($theme) {
-    return theme_boost_paintbynumbers_scss($theme);
+    return theme_boost_bydesign_scss($theme);
 };
 $THEME->yuicssmodules         = [];
 $THEME->activityheaderconfig  = ['notitle' => true];
